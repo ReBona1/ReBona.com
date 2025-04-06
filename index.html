@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatitable" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReBona</title>
+    <script src="https://kit.fontawesome.com/4b9aad959c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section class="header">
+        <a href="#"><img class="size" src="https://i.ibb.co/vcZ5f5J/rblogo-removebg-preview.png" class="logo" alt=""></a>
+
+        <div>
+            <ul class="navbar">
+                <li><a class="active" href="index.html">Početna</a></li>
+                <li><a href="shop.html">Trgovina</a></li>
+                <li><a href="AboutUs.html">O nama</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div class="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section class="hero">
+        <p></p>
+        <h1>ReBona</h1>
+        <h4>Prodaja poslovne odjeće</h4>
+        <p></p>
+        <h2>Naš stil, Vaša priča!</h2>
+        <p></p>
+        <button>Kupujte odmah!</button>
+     
+
+    </section>
+
+    <section class="feature">
+        <div class="fe-box">
+            <img src="https://i.ibb.co/X4x9mKF/online-order-removebg-preview.png" alt="" width="100px" height="100px">
+            <h6><b>Online narudžba</b></h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="https://i.ibb.co/k3jXfbF/organic-fabricstion-removebg-preview.png" alt="" width="100px" height="100px">
+            <h6><b>Organski materijali</b></h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="https://i.ibb.co/nPH5Ymm/save-money-removebg-preview.png" alt="" width="100px" height="100px">
+            <h6><b>Uštedi novac</b></h6>
+        </div>
+    </section>
+
+    <section class="banner">
+        <img src="https://i.ibb.co/8Dc6xJmC/popust1.png">
+        <a href="shop.html"><button class="normal">Vidi više</button></a>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="">
+            <h3>Contact</h3>
+            <p><strong>Adresa:</strong> Iva Vojnovića 12a</p>
+            20000 Dubrovnik
+        </div>
+        <div class="follow">
+            <h5>Zapratite nas</h5>
+            <p></p>
+            <div class="icon">
+                <a href="https://www.facebook.com/vtReBona/"><i class="fab fa-facebook-f"></i></a>
+                <p></p>
+                <a href="https://www.instagram.com/vt_rebona/"><i class=" fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="col">
+            <h3>Moj račun</h3>
+            <a href="#">Prijava</a>
+            <a href="#">Pogledaj košaricu</a>
+            <a href="#">Moja lista želja</a>
+            <a href="#">Prati moje narudžbe
+            </a>
+            <a href="#">Pomoć</a>
+        </div>
+
+        <div class="col">
+            <h3>O nama</h3>
+            <a href="#">O nama</a>
+            <a href="#">Informacije o isporuci</a>
+            <a href="#">Politika privatnosti</a>
+            <a href="#">Odredbe i uvjeti</a>
+            <a href="#">Kontaktirajte nas</a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 64px;
+        color: #222;
+    }
+
+    h2 {
+        font-size: 46px;
+        line-height: 54px;
+        color: #c56568;
+    }
+
+    h4 {
+        font-size: 20px;
+        color: #e0d7cc;
+    }
+
+    h6{
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #e0d7cc;
+        margin: 15px 0 20px 0;
+    }
+
+    .section-p1 {
+        padding: 40px 80px;
+    }
+
+    .section-m1 {
+        margin: 40px 0;
+    }
+
+    body {
+        width: 100%;
+        background-color: #e0d7cc;
+    }
+
+    button.normal {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 15px 30px;
+        color: #000;
+        background-color: #fff;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        transition: 0.2s;
+        border-radius: 15px;
+    }
+
+    /* Header Start */
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 80px;
+        background: #e0d7cc;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left: 0;
+
+    }
+
+    .size {
+        width: 100%;
+        height: 5vh;
+    }
+
+     .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+     .navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    }
+    .navbar li a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #222;
+        transition: 0.3s ease;
+    }
+    .navbar li a:hover {
+        color: #c56868;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+        color:#c56868;
+    }
+    .navbar li a.active::after,
+    .navbar li a:hover::after {
+        content: "";
+        width: 30%;
+        height: 2px;
+        background: #c56868;
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+    }
+
+    .mobile {
+        display: none;
+        align-items: center;
+    }
+
+    /* Home Page */
+
+    .hero {
+        background-image: url(https://i.ibb.co/k53GwQq/3ceaa9b35a8398679118.jpg);
+        height: 90vh;
+        width: 100%;
+        background-size: cover;
+        background-position: top 25% right;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .hero h4 {
+        padding-top: 15px;
+    }
+    .hero h1 {
+        color: #c56868;
+    }
+
+    .hero button {
+        background-color: transparent;
+        color: #c56868;
+        border: 5px solid #e0d7cc;
+        padding: 14px 80px 14px 65px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        font-weight: 900;
+        font-size: 15px;
+        border-radius: 40%;
+        box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
+        background-color: #e0d7cc;
+    }
+
+    .feature {
+        padding: 40px 160px 40px 160px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .feature .fe-box {
+        width: 180px;
+        text-align: center;
+        padding: 25px 15px;
+        box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
+        border: 1px solid #a8a8aa77;
+        border-radius: 4px;
+        margin: 15px 0;
+    }
+
+    .feature .fe-box:hover {
+        box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+    }
+
+    .feature .fe-box h6 {
+        padding: 9px 8px 6px 8px;
+        line-height: 1;
+        border-radius: 4px;
+        color: #222;
+        background-color: #e0af72;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 40px 0;
+        background-image: url();
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner h5 {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .banner h2 {
+        color: #fff;
+        font-size: 30px;
+        padding: 10px 0;
+    }
+
+    .banner h2 span {
+        color: red;
+    }
+    .banner button:hover {
+        background: #c56568;
+        color: #e0d7cc;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer .col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        
+    }
+
+    footer a {
+        font-size: 13px;
+        margin: 0 0 8px 0; 
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 10px;
+    }
+
+    footer .follow i {
+        color: #c56568;
+        padding-right: 4px;
+        cursor: pointer;
+    }
+
+    footer p {
+        color: #222;
+        font-size: 16px;
+        margin: 15px 0 20px 0;
+    }
+
+    
+
+
+
+</style>
+
+<script>
+    const bar = document.getElementsByClassName('bar')
+    const nav = document.getElementsByClassName('navbar')
+
+    if (bar) {
+        bar.addEventListener('click', () => {
+            nav.classList.add('active');
+        })
+    }
+</script>
+</html>
